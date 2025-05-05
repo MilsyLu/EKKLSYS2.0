@@ -13,8 +13,8 @@ namespace DAL_2
             var server = "localhost";
             var port = "1521";
             var serviceName = "XEPDB1";  // Ejemplo para Oracle XE
-            var user = "system";
-            var password = "oracle";
+            var user = "Cristian";
+            var password = "2508";
 
             stringConnection = $"User Id={user};Password={password};Data Source={server}:{port}/{serviceName};";
         }
