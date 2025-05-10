@@ -179,6 +179,42 @@
     <Compile Include="Form Admin\FrmLobyAdmin.Designer.cs">
       <DependentUpon>FrmLobyAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form Users\FrmConfiguracionUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Users\FrmConfiguracionUser.Designer.cs">
+      <DependentUpon>FrmConfiguracionUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Users\FrmCursosUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Users\FrmCursosUser.Designer.cs">
+      <DependentUpon>FrmCursosUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Users\FrmDetalleCursoUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Users\FrmDetalleCursoUser.Designer.cs">
+      <DependentUpon>FrmDetalleCursoUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Users\FrmDetalleEventosUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Users\FrmDetalleEventosUser.Designer.cs">
+      <DependentUpon>FrmDetalleEventosUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Users\FrmEventosUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Users\FrmEventosUser.Designer.cs">
+      <DependentUpon>FrmEventosUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Users\FrmLobyUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Users\FrmLobyUser.Designer.cs">
+      <DependentUpon>FrmLobyUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,6 +271,9 @@
     <EmbeddedResource Include="Form Admin\FrmLobyAdmin.resx">
       <DependentUpon>FrmLobyAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form Users\FrmLobyUser.resx">
+      <DependentUpon>FrmLobyUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,9 +329,7 @@
     <Content Include="images\fondo_login.jpg" />
     <Content Include="images\logo_ekklesys_redondo.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Form Users\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

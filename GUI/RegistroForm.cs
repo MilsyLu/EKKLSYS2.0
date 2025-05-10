@@ -112,9 +112,7 @@ namespace GUI
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            FrmLogin frmLogin = new FrmLogin();
-            frmLogin.Show();
-            this.Close();
+            this.Close(); // Cierra solo el formulario de registro
         }
 
         //private void InitializeComponent()
@@ -131,6 +129,11 @@ namespace GUI
         //}
 
         private void RegistroForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegistroForm_Load_1(object sender, EventArgs e)
         {
 
         }

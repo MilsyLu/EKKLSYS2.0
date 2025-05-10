@@ -5,9 +5,8 @@ using System.IO;
 using System.Windows.Forms;
 using BLL;
 using ENTITY;
-using GUI.Form_Admin;
 
-namespace GUI
+namespace GUI.Form_Users
 {
     public partial class FrmEventosUser : Form
     {
@@ -130,20 +129,6 @@ namespace GUI
             detalleForm.ShowDialog();
 
             // Recargar eventos al cerrar el formulario de detalles
-            CargarEventos();
-        }
-
-        private void btnNuevoEvento_Click(object sender, EventArgs e)
-        {
-            FrmCrearEvento crearForm = new FrmCrearEvento();
-            if (crearForm.ShowDialog() == DialogResult.OK)
-            {
-                CargarEventos();
-            }
-        }
-
-        private void btnRefrescar_Click(object sender, EventArgs e)
-        {
             CargarEventos();
         }
 

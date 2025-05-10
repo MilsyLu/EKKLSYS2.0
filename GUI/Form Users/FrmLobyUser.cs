@@ -12,9 +12,9 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using GUI.Form_Admin;
 
-namespace GUI
+namespace GUI.Form_Users
 {
-    public partial class FrmLobyAdmin: Form
+    public partial class FrmLobyUser : Form
     {
         //Fields
         private IconButton currentBtn;
@@ -22,12 +22,12 @@ namespace GUI
         private Form currentChildForm;
 
         //Constructor
-        public FrmLobyAdmin()
+        public FrmLobyUser()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 50);
-            pnMenuLobyAdmin.Controls.Add(leftBorderBtn);
+            pnMenuLobyUser.Controls.Add(leftBorderBtn);
             //FORM
             this.Text = string.Empty;
             this.ControlBox = false;
@@ -103,11 +103,11 @@ namespace GUI
             }
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FrmDashboard());
-        }
+        //private void btnDashboard_Click(object sender, EventArgs e)
+        //{
+        //    ActivateButton(sender, RGBColors.color1);
+        //    OpenChildForm(new FrmDashboard());
+        //}
 
         private void btnEventos_Click(object sender, EventArgs e)
         {
@@ -118,25 +118,25 @@ namespace GUI
         private void btnCursos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new FrmCursosAdmin());
+            OpenChildForm(new FrmCursosUser());
         }
 
-        private void btnParticipantes_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color4);
-            OpenChildForm(new FrmParticipantes());
-        }
+        //private void btnParticipantes_Click(object sender, EventArgs e)
+        //{
+        //    ActivateButton(sender, RGBColors.color4);
+        //    OpenChildForm(new FrmParticipantes());
+        //}
 
-        private void btnReportes_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color5);
-            OpenChildForm(new FrmReportes());
-        }
+        //private void btnReportes_Click(object sender, EventArgs e)
+        //{
+        //    ActivateButton(sender, RGBColors.color5);
+        //    OpenChildForm(new FrmReportes());
+        //}
 
         private void btnConfiguracion_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new FrmConfiguracion());
+            OpenChildForm(new FrmConfiguracionUser());
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
@@ -215,6 +215,12 @@ namespace GUI
         private void panelVistaInterna_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            PerfilForm perfilForm = new PerfilForm();
+            perfilForm.ShowDialog(); // Muestra el formulario como un diálogo modal
         }
     }
 }
