@@ -176,5 +176,10 @@ namespace GUI
             // Implementar cambio de contraseña
             MessageBox.Show("Funcionalidad no implementada", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
