@@ -80,6 +80,16 @@ namespace DAL
         {
             string[] campos = datos.Split(';');
             Usuario usuario = new Usuario();
+            if (!int.TryParse(campos[0], out int id))
+            {
+                throw new FormatException($"El valor '{campos[0]}' no es un número entero válido.");
+            }
+            if (string.IsNullOrWhiteSpace(datos))
+            {
+                throw new FormatException("Se encontró una línea vacía o mal formateada en el archivo.");
+            }
+            usuario.Id = id;
+            
             usuario.Id = int.Parse(campos[0]);
             usuario.Nombre = campos[1];
             usuario.Apellido = campos[2];

@@ -73,6 +73,12 @@ namespace BLL
             }
         }
 
+        public string HashPassword(string password)
+        {
+            return repoUsuario.HashPassword(password);
+        }
+
+
         public string Eliminar(int id)
         {
             try

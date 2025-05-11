@@ -4,6 +4,7 @@ using System.IO;
 using System.Windows.Forms;
 using BLL;
 using ENTITY;
+using GUI.Form_Users;
 
 namespace GUI
 {
@@ -174,7 +175,10 @@ namespace GUI
         private void btnCambiarPassword_Click(object sender, EventArgs e)
         {
             // Implementar cambio de contraseña
-            MessageBox.Show("Funcionalidad no implementada", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("Funcionalidad no implementada", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            CambiarPasswordFrm cambiarPassword = new CambiarPasswordFrm(usuario);
+            cambiarPassword.Show();
+            this.Hide();
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
