@@ -113,6 +113,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CambiarPasswordFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarPasswordFrm.Designer.cs">
+      <DependentUpon>CambiarPasswordFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form Admin\FrmConfiguracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +244,9 @@
     <Compile Include="Session.cs">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="CambiarPasswordFrm.resx">
+      <DependentUpon>CambiarPasswordFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form Admin\FrmConfiguracion.resx">
       <DependentUpon>FrmConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form Admin\FrmLobyAdmin.resx">
       <DependentUpon>FrmLobyAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Users\FrmEventosUser.resx">
+      <DependentUpon>FrmEventosUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form Users\FrmLobyUser.resx">
       <DependentUpon>FrmLobyUser.cs</DependentUpon>

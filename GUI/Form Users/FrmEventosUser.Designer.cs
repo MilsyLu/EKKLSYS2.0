@@ -29,7 +29,6 @@ namespace GUI.Form_Users
             this.flpEventos = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-
             // 
             // panel1
             // 
@@ -37,41 +36,43 @@ namespace GUI.Form_Users
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(620, 52);
+            this.panel1.Size = new System.Drawing.Size(827, 64);
             this.panel1.TabIndex = 0;
-
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(17, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 30);
+            this.label1.Size = new System.Drawing.Size(245, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Próximos Eventos";
-
             // 
             // flpEventos
             // 
             this.flpEventos.AutoScroll = true;
             this.flpEventos.BackColor = System.Drawing.Color.White;
             this.flpEventos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpEventos.Location = new System.Drawing.Point(0, 52);
+            this.flpEventos.Location = new System.Drawing.Point(0, 64);
+            this.flpEventos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flpEventos.Name = "flpEventos";
-            this.flpEventos.Padding = new System.Windows.Forms.Padding(9);
-            this.flpEventos.Size = new System.Drawing.Size(620, 307);
+            this.flpEventos.Padding = new System.Windows.Forms.Padding(12, 11, 12, 11);
+            this.flpEventos.Size = new System.Drawing.Size(827, 378);
             this.flpEventos.TabIndex = 1;
-
+            this.flpEventos.Paint += new System.Windows.Forms.PaintEventHandler(this.flpEventos_Paint);
             // 
             // FrmEventosUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 359);
+            this.ClientSize = new System.Drawing.Size(827, 442);
             this.Controls.Add(this.flpEventos);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmEventosUser";
             this.Text = "Eventos";
             this.Load += new System.EventHandler(this.EventosForm_Load);

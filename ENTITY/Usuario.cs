@@ -32,6 +32,7 @@ namespace ENTITY
                 return false;
 
             Usuario other = (Usuario)obj;
+            Console.WriteLine($"Comparando Usuario: {Id} con Usuario: {other.Id}");
             return Id == other.Id;
         }
 

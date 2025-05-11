@@ -96,5 +96,10 @@ namespace GUI
             registroForm.ShowDialog();
             this.Show();
         }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

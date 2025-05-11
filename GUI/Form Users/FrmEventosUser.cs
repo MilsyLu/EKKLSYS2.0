@@ -136,5 +136,10 @@ namespace GUI.Form_Users
         {
 
         }
+
+        private void flpEventos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
